@@ -1,0 +1,53 @@
+name: 'Terraform Apply (Main)'
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'infra/**'
+      - '.github/workflows/run-on-main.yml'
+
+env:
+  TF_IN_AUTOMATION: true
+  TF_VAR_github_access_token: ${{ secrets.TF_VAR_GITHUB_ACCESS_TOKEN}}
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  terraform-apply:
+    name: 'Terraform Apply stage'
+    runs-on: ubuntu-latest
+    environment: production-manual
+    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: infra
+
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: terraform-output
+          path: tfplan.tfstate
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::316893886507:role/github-oidc-setup-Role-C0KUR2XG3UAD
+          aws-region: ap-south-1
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform validate
+        run: terraform validate
+
+      # Generates an execution plan for Terraform
+      - name: Terraform Plan
+        run: terraform plan -input=false -out=tfplan.tfstate
+
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
+        run: TF_IN_AUTOMATION=true terraform apply -auto-approve -input=false "tfplan.tfstate
