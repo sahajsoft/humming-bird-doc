@@ -38,6 +38,9 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
+      - name: Echo AWS role
+        run: echo "$GITHUB_OIDC_ROLE"
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
