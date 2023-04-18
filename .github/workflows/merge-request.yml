@@ -4,12 +4,13 @@ on:
   push:
   pull_request:
         paths:
-        - 'infra/**'
+        - 'infra/project-infra/**'
         - '.github/workflows/merge-request.yml'
 
 env:
   TF_IN_AUTOMATION: true
-  TF_VAR_github_access_token: ${{ secrets.TF_VAR_GITHUB_ACCESS_TOKEN}}
+  TF_VAR_github_access_token: ${{ secrets.GIT_ACCESS_KEY }}
+  GITHUB_OIDC_ROLE: ${{ secrets.AWS_OIDC_ROLE }}
 
 
 permissions:
@@ -26,7 +27,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: infra
+        working-directory: infra/project-infra
 
     steps:
       # Checkout the repository to the GitHub Actions runner
@@ -40,7 +41,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::316893886507:role/github-oidc-setup-Role-C0KUR2XG3UAD
+          role-to-assume: $GITHUB_OIDC_ROLE
           aws-region: ap-south-1
 
       # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
