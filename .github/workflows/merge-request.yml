@@ -38,13 +38,10 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
-      - name: Echo AWS role
-        run: echo "$GITHUB_OIDC_ROLE"
-
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: "$GITHUB_OIDC_ROLE"
+          role-to-assume: "$arn:aws:iam::316893886507:role/humming-bird-github-oidc-role"
           aws-region: ap-south-1
 
       # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
