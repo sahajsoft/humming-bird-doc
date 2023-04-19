@@ -1,5 +1,7 @@
 data "aws_iam_openid_connect_provider" "github-idp-provider" {
   url = "https://token.actions.githubusercontent.com"
+
+  depends_on = [module.oidc_github]
 }
 
 data "aws_caller_identity" "current" {}

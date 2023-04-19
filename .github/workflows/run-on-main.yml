@@ -10,7 +10,6 @@ on:
 env:
   TF_IN_AUTOMATION: true
   TF_VAR_github_access_token: ${{ secrets.GIT_ACCESS_KEY }}
-  GITHUB_OIDC_ROLE: ${{ secrets.AWS_OIDC_ROLE }}
 
 permissions:
   contents: read
@@ -36,7 +35,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: $GITHUB_OIDC_ROLE
+          role-to-assume: "arn:aws:iam::316893886507:role/humming-bird-github-oidc-role"
           aws-region: ap-south-1
 
       - name: Terraform Init

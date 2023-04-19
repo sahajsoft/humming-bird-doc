@@ -10,7 +10,6 @@ on:
 env:
   TF_IN_AUTOMATION: true
   TF_VAR_github_access_token: ${{ secrets.GIT_ACCESS_KEY }}
-  GITHUB_OIDC_ROLE: ${{ secrets.AWS_OIDC_ROLE }}
 
 
 permissions:
