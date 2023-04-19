@@ -83,6 +83,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: amplify.tfstate
+          path: infra/project-infra/
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
