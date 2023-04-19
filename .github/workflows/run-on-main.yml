@@ -35,6 +35,8 @@ jobs:
       # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 1.4.5
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
@@ -70,6 +72,11 @@ jobs:
         working-directory: infra/project-infra
 
     steps:
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 1.4.5
+
       - uses: actions/download-artifact@v3
         with:
           name: amplify.tfstate
