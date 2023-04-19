@@ -59,7 +59,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: amplify.tfstate
-          path: amplify.tfstate
+          path: infra/project-infra/amplify.tfstate
 
   terraform-apply:
     name: 'Terraform Apply stage'
@@ -80,7 +80,6 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: amplify.tfstate
-          path: amplify.tfstate
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
