@@ -59,7 +59,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: amplify.tfstate
-          path: ./
+          path: amplify.tfstate
 
   terraform-apply:
     name: 'Terraform Apply stage'
@@ -80,7 +80,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: amplify.tfstate
-          path: ./
+          path: amplify.tfstate
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
@@ -92,5 +92,5 @@ jobs:
         run: terraform init
 
       - name: Terraform Apply
-        if: github.ref == 'refs/heads/"main"'
+        if: github.ref == 'refs/heads/main'
         run: TF_IN_AUTOMATION=true terraform apply -auto-approve -input=false "amplify.tfstate"
