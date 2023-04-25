@@ -7,7 +7,7 @@ variable "GitHubOrg" {
 variable "RepositoryName" {
   description = "Name of GitHub repository (case sensitive)"
   type        = string
-  default = "humming-bird-doc-react"
+  default = "hummingbird-doc"
 }
 
 variable "OIDCAudience" {
