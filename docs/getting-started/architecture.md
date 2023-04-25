@@ -1,9 +1,13 @@
-
-# Architecture
+---
+id: architecture
+title: Architecture
+sidebar_label: Architecture
+---
 
 **Note:** All decisions which have been taken so far, and implemented are subject to change.
 
-The project has two repositories as of now. 
+The project has two repositories as of now.
+
 - [humming-bird-control-plane](https://github.com/sahajsoft/hummingbird-control-plane)
 - and [humming-bird-charts](https://github.com/sahajsoft/humming-bird-charts)
 
