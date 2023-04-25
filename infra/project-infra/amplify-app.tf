@@ -1,6 +1,6 @@
 resource "aws_amplify_app" "humming-bird-amplify-app" {
   name = "humming-bird-doc"
-  repository = "https://github.com/sahajsoft/humming-bird-doc"
+  repository = "https://github.com/sahajsoft/hummingbird-doc"
 
   build_spec = file("build-spec.yaml")
   enable_branch_auto_build = true
