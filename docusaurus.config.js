@@ -85,12 +85,12 @@ const config = {
             to: "docs/getting-started/architecture",
             position: "right",
           },
-          {
-            label: "Tutorial",
-            to: "docs/tutorial",
-            position: "right",
-          },
-          { to: "/blog", label: "Blog", position: "right" },
+          // {
+          //   label: "Tutorial",
+          //   to: "docs/tutorial",
+          //   position: "right",
+          // },
+          // { to: "/blog", label: "Blog", position: "right" },
           {
             href: "https://github.com/sahajsoft/hummingbird-doc",
             label: "GitHub",
@@ -121,10 +121,10 @@ const config = {
                 label: "Getting Started",
                 to: "docs/getting-started/architecture",
               },
-              {
-                label: "Tutorial",
-                to: "/docs/tutorial",
-              },
+              // {
+              //   label: "Tutorial",
+              //   to: "/docs/tutorial",
+              // },
             ],
           },
           {
@@ -141,15 +141,15 @@ const config = {
               },
             ],
           },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-            ],
-          },
+          // {
+          //   title: "More",
+          //   items: [
+          //     {
+          //       label: "Blog",
+          //       to: "/blog",
+          //     },
+          //   ],
+          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} humming:bird`,
       },

@@ -16,12 +16,12 @@ const sidebars = {
   docs: {
     Introduction: ["hummingbird", "tech-decisions"],
     "Getting Started": ["getting-started/architecture"],
-    Tutorial: ["tutorial/tutorial"],
+    // Tutorial: ["tutorial/tutorial"],
     "Get Involved": [
       "get-involved/suggest-feature",
-      "get-involved/contribute",
+      // "get-involved/contribute",
       "get-involved/roadmap",
-      "get-involved/faq",
+      // "get-involved/faq",
     ],
   },
 };
