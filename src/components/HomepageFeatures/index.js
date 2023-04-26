@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         humming:bird helps you to bootstrap your platform infrastructure from
-        the ground up. Focuse on solving your business problems, not the
+        the ground up. Focus on solving your business problems, not the
         infrastructure.
       </>
     ),
