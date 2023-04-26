@@ -123,8 +123,8 @@ const config = {
                 href: "https://twitter.com/SahajSoftware",
               },
             {
-              label: "Email",
-              href: "mailto:tech-council@sahaj.ai",
+              label: "Reach out to us",
+              href: "https://github.com/sahajsoft/hummingbird-doc/issues",
             }
             ],
           },
