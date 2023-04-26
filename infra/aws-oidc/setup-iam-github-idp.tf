@@ -8,7 +8,7 @@ module "oidc_github" {
 
   tags = {
     createdBy = "anirudhr"
-    usedBy = "humming-bird-doc-react"
+    usedBy = "hummingbird-doc"
     purpose = "github-oidc"
   }
 }

@@ -1,5 +1,5 @@
 resource "aws_amplify_app" "humming-bird-amplify-app" {
-  name = "humming-bird-doc"
+  name = "hummingbird-doc"
   repository = "https://github.com/sahajsoft/hummingbird-doc"
 
   build_spec = file("build-spec.yaml")

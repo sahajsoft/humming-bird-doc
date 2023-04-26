@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Humming:bird",
-  tagline: "Floats like a 🦋, stings like a 🐝",
+  title: "humming:bird",
+  tagline: "",
   // TODO: change favicon
   favicon: "img/favicon.ico",
 
@@ -20,7 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "sahajsoft", // Usually your GitHub org/user name.
-  projectName: "humming-bird-doc", // Usually your repo name.
+  projectName: "hummingbird-doc", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -42,13 +42,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/sahajsoft/humming-bird-doc/tree/main/",
+          editUrl: "https://github.com/sahajsoft/hummingbird-doc/tree/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/sahajsoft/humming-bird-doc/tree/main/",
+          editUrl: "https://github.com/sahajsoft/hummingbird-doc/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -68,9 +68,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "Humming:bird",
+        title: "humming:bird",
         logo: {
-          alt: "Humming:bird Logo",
+          alt: "humming:bird Logo",
           // TODO: change logo
           src: "img/logo.svg",
         },
@@ -92,7 +92,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "right" },
           {
-            href: "https://github.com/sahajsoft/humming-bird-doc-react",
+            href: "https://github.com/sahajsoft/hummingbird-doc",
             label: "GitHub",
             position: "right",
           },
@@ -105,7 +105,7 @@ const config = {
             title: "About",
             items: [
               {
-                label: "Humming:bird",
+                label: "humming:bird",
                 to: "/docs/hummingbird",
               },
               {
@@ -137,7 +137,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/sahajsoft/humming-bird-doc-react",
+                href: "https://github.com/sahajsoft/hummingbird-doc",
               },
             ],
           },
@@ -151,7 +151,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Humming:bird`,
+        copyright: `Copyright © ${new Date().getFullYear()} humming:bird`,
       },
       prism: {
         theme: lightCodeTheme,
