@@ -6,7 +6,7 @@ sidebar_label: Tech Decisions
 
 ### Rancher
 
-`humming:bird` uses `Rancher` for creating the control plane in HA configuration. We have explored various tools to achieve this and we have decided to continue with `rancher` for now. As to why this decision was taken, you can check the table below. If you do not care, you can [skip this and go to next section](#tekton)
+`humming:bird` uses `Rancher` for creating the control plane in HA configuration. We have explored various tools to achieve this and we decided to continue with `rancher` for now. As to why this decision was taken, you can check the table below. If you do not care, you can [skip this and go to next section](#tekton)
 
 <table>
 <thead>
@@ -96,7 +96,7 @@ sidebar_label: Tech Decisions
 
 ### Tekton
 
-Tekton was an obvious choice. We decided early on we do not want lock-in with any cloud providers. Tekton had good community adoption and a nice plugin hub.
+Tekton was an obvious choice. We decided early on we do not want lock-in with any Git providers. Tekton had good community adoption and a nice plugin hub.
 
 ### ArgoCD (Not Implemented)
 

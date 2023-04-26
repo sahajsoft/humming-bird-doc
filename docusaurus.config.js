@@ -102,24 +102,11 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "About",
-            items: [
-              {
-                label: "humming:bird",
-                to: "/docs/hummingbird",
-              },
-              {
-                label: "Get Involved",
-                to: "/docs/get-involved/suggest-feature",
-              },
-            ],
-          },
-          {
             title: "Docs",
             items: [
               {
-                label: "Getting Started",
-                to: "docs/getting-started/architecture",
+                label: "Get Involved",
+                to: "docs/get-involved/suggest-feature",
               },
               // {
               //   label: "Tutorial",
@@ -135,10 +122,10 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/SahajSoftware",
               },
-              {
-                label: "GitHub",
-                href: "https://github.com/sahajsoft/hummingbird-doc",
-              },
+            {
+              label: "Email",
+              href: "mailto:tech-council@sahaj.ai",
+            }
             ],
           },
           // {
