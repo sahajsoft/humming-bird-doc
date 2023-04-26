@@ -5,8 +5,8 @@ However, that is the basic setup needed for the rest of the project to work.
 
 The site is built using Docusaurus (which uses react).
 
-# humming-bird-doc-react
-Documentation for Humming project, Using Docusaurus. This is hosted on AWS Amplify
+# hummingbird-doc
+Documentation for humming:bird project, Using Docusaurus. This is hosted on AWS Amplify
 
 Docs for running the site:
 # Website

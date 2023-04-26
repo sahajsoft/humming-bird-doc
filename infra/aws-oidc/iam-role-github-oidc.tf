@@ -41,7 +41,7 @@ resource "aws_iam_role" "github-oidc-role" {
 
   tags = {
     createdBy = "anirudhr"
-    usedBy = "humming-bird-doc-react"
+    usedBy = "hummingbird-doc"
     purpose = "github-oidc"
   }
 }
