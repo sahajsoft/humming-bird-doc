@@ -77,12 +77,12 @@ const config = {
         items: [
           {
             label: "About",
-            to: "docs/hummingbird",
+            to: "docs/Introduction",
             position: "right",
           },
           {
             label: "Getting Started",
-            to: "docs/getting-started/architecture",
+            to: "docs/Getting Started",
             position: "right",
           },
           // {
