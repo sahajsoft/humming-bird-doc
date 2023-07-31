@@ -52,3 +52,10 @@ Currently, the only cloud provider supported is AWS with the [AWS Load Balancer 
 This allows us to provision an AWS NLB to expose our nginx deployment.
 
 ![traffic flow diagram](../../static/img/traffic-flow.png)
+
+### Managing secrets
+
+Vault is the single source of truth inside the cluster. All other tools read from and write their secrets to Vault. 
+
+Dynamic vault secret engines generate secrets that are used by applications / tools to authenticate with cloud providers and other supported external resources.
+Vault injector is used to supply secrets from Vault to user applications and by the tools installed by HummingBird. 
