@@ -57,7 +57,7 @@ terraform apply --auto-approve
 
 Feel free to change the defaults of the variables defined in `variables.tf` file
 
-Open [rancher-minikube.local](rancher-minikube.local) in browser. You should see something like this. You don't have to worry about this, as your network traffic with the control plane and minikube will not leave your computer.
+Open [rancher-minikube.local](http://rancher-minikube.local) in browser. You should see something like this. You don't have to worry about this, as your network traffic with the control plane and minikube will not leave your computer.
 
 ![Privacy error](images/privacy-error.png)
 
