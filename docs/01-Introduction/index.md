@@ -25,4 +25,4 @@ There are few challenges in standardising infra and automating this task
 * the control plane can change at any given time. For instance client may change cloud provider, or move from managed to self-managed service.
 * Some services which we want to deploy are not wanted in the project or may already exist in the project.
 
-`hummingbird` is designed keeping all of this in mind. Read about how [here](/docs/04-Architecture)
+`hummingbird` is designed keeping all of this in mind. Read about how [here](../Architecture)

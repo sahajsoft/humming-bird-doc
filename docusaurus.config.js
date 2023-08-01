@@ -102,11 +102,11 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Want to contribute?",
             items: [
               {
                 label: "Get Involved",
-                to: "docs/get-involved/suggest-feature",
+                to: "docs/Get Involved",
               },
               // {
               //   label: "Tutorial",
