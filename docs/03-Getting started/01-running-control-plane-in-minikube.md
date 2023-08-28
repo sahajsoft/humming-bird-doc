@@ -1,4 +1,4 @@
-# Running control plane in minikube
+# Running Rancher in minikube
 
 ## Rancher Minikube setup
 
